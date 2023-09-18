@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        String filePath="/home/isfandiyar/Downloads/StreamPracticeWithCSVFile.csv";
+        String filePath="./StreamPracticeWithCSVFile.csv";
         try(BufferedReader reader= new BufferedReader(new FileReader(filePath))){
             List<Person> people=reader.lines().skip(1).map(line->{
                 String [] parts=line.split(",");
